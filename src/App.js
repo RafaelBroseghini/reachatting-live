@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { AppProvider } from './contexts/appContext';
 
-function App() {
+import UsersOnline from './components/UsersOnline';
+import RoomsDisplay from './components/RoomsDisplay';
+import ChatBox from './components/ChatBox';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <p></p>
+      <div className='container-fluid h-100'>
+        <div className='row justify-content-center'>
+          <UsersOnline />
+        </div>
+        <div className='row justify-content-center h-100'>
+          <RoomsDisplay />
+          <ChatBox />
+        </div>
+      </div>
+    </AppProvider>
   );
-}
+};
 
 export default App;
