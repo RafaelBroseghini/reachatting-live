@@ -4,6 +4,8 @@
 
 - Use as you wish! You're the hacker :thumbsup:
 
+![Preview](/reachatting.gif)
+
 ## Usage:
 
 > There are two parts to this app. A server and a client.

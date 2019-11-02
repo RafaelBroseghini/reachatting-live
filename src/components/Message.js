@@ -31,7 +31,7 @@ const Message = msg => {
         <>
           <div className='img_cont_msg'>
             <img
-              src='https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg'
+              src='https://picsum.photos/seed/picsum/200/300'
               className='rounded-circle user_img_msg'
             />
           </div>
